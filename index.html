@@ -16,32 +16,61 @@
     </nav>
   </header>
 
-  <section id="productos" class="container">
-   
+  <!-- Botones de categoría -->
+  <section class="categorias">
+    <button onclick="mostrarCategoria('aretes')">Aretes</button>
+    <button onclick="mostrarCategoria('joyas')">Joyas</button>
+    <button onclick="mostrarCategoria('otros')">Otros</button>
+  </section>
+
+  <!-- Secciones de productos por categoría -->
+  <section id="aretes" class="container categoria" style="display:none;">
+    <h2>Aretes</h2>
+    <div class="product-card">
+      <img src="img/aret1.jpg.jpg" alt="Arete elegante">
+      <h3>Arete Elegante</h3>
+      <p>$27.000</p>
+    </div>
+  </section>
+
+  <section id="joyas" class="container categoria" style="display:none;">
+    <h2>Joyas</h2>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x180" alt="Collar">
+      <h3>Collar Dorado</h3>
+      <p>$35.000</p>
+    </div>
+  </section>
+
+  <section id="otros" class="container categoria" style="display:none;">
+    <h2>Otros</h2>
     <div class="product-card">
       <img src="https://via.placeholder.com/200x180" alt="Base">
       <h3>Base Líquida</h3>
       <p>$30.000</p>
     </div>
-
     <div class="product-card">
       <img src="https://via.placeholder.com/200x180" alt="Rímel">
       <h3>Rímel Volumen</h3>
       <p>$20.000</p>
     </div>
   </section>
-  <div class="product-card">
- <img src="arete1.jpg.jpg" alt="Arete elegante">
-  <h3>Arete Elegante</h3>
-  <p>$27.000</p>
-</div>
 
   <footer id="contacto">
-  <p>
-    📞 <a href="https://wa.me/573146384647" target="_blank" class="whatsapp-link">WhatsApp: +57 3146384647</a> 
-  </p>
-  <p>&copy; 2025 Belleza Total</p>
-</footer>
+    <p>
+      📞 <a href="https://wa.me/573146384647" target="_blank" class="whatsapp-link">WhatsApp: +57 3146384647</a> 
+    </p>
+    <p>&copy; 2025 Belleza Total</p>
+  </footer>
+
+  <!-- Script para mostrar categorías -->
+  <script>
+    function mostrarCategoria(id) {
+      const secciones = document.querySelectorAll('.categoria');
+      secciones.forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
