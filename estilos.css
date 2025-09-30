@@ -20,6 +20,7 @@ nav a {
   font-weight: bold;
 }
 
+/* Fondo para las secciones de productos */
 .container {
   background-image: url('img/imgfondo.jpg.png');
   background-size: cover;
@@ -29,6 +30,29 @@ nav a {
   min-height: 100vh;
 }
 
+/* Botones de categoría */
+.categorias {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.categorias button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categorias button:hover {
+  background-color: #d81b60;
+}
+
+/* Tarjetas de producto */
 .product-card {
   background: white;
   border-radius: 10px;
@@ -36,6 +60,8 @@ nav a {
   overflow: hidden;
   text-align: center;
   padding: 10px;
+  margin: 20px auto;
+  max-width: 250px;
   transition: transform 0.2s;
 }
 
@@ -49,6 +75,7 @@ nav a {
   object-fit: cover;
 }
 
+/* Pie de página */
 footer {
   text-align: center;
   padding: 20px;
@@ -67,7 +94,6 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-/* Efecto al pasar el mouse */
 .whatsapp-link:hover {
   background-color: #1ebe5d;
 }
