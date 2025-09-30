@@ -26,6 +26,7 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   padding: 20px;
+  min-height: 100vh;
 }
 
 .product-card {
