@@ -6,10 +6,11 @@ body {
 }
 
 header {
-  background: #e91e63;
+  background: #e91e63; /* color de marca */
   color: white;
   padding: 20px;
   text-align: center;
+  font-family: 'Arial', sans-serif;
 }
 
 nav a {
